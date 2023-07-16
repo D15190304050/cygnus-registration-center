@@ -1,0 +1,19 @@
+spring:
+    cloud:
+        nacos:
+            discovery:
+                server-addr: localhost:8848
+
+#gateway-address: localhost:9527
+
+dubbo:
+    application:
+        name: ${spring.application.name}-dubbo
+    registry:
+        address: nacos://${spring.cloud.nacos.discovery.server-addr}
+    protocol:
+        name: dubbo
+        port: -1
+
+zookeeper:
+    address: localhost:2181

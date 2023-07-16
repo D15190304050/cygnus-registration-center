@@ -1,0 +1,5 @@
+# Project exclude paths
+/cygnus-registration-center-rpc/target/
+/cygnus-registration-center-service/target/
+/cygnus-registration-center-web/target/
+/cygnus-registration-common/target/
